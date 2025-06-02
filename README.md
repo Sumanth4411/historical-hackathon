@@ -17,4 +17,4 @@ In essence, this project is not just a website—it is a tribute to the spirit o
 As we navigate the complexities of the 21st century, remembering the struggles and lessons from India’s independence becomes even more crucial. This project stands as a reminder that freedom is precious, fragile, and must be continually defended. It is a call to honor those who came before us by staying informed, involved, and inspired to build a better future. The legacy of India’s independence is a beacon of hope for all who believe in justice, equality, and human dignity. Through innovative web design, this project hopes to keep that beacon shining bright, guiding new generations toward a deeper understanding of their heritage and the ongoing journey toward a truly free society.
 
 
-# Output: 
+# Output: ![Image](https://github.com/user-attachments/assets/714bccc1-d6f2-4182-b4d8-a94bf4f41a9f)
