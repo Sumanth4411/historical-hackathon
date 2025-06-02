@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>India’s Independence – Freedom Scroll</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <div class="fixed top-0 left-0 h-1 bg-green-600 z-50" id="progressBar"></div>
+
+<script>
+  window.addEventListener("scroll", () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = (scrollTop / docHeight) * 100;
+    document.getElementById("progressBar").style.width = progress + "%";
+  });
+</script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-image: url('images/background.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    /* Colors already set by Tailwind, repeated here for clarity */
+    .text-red-600 { color: #e53e3e; }
+    .text-green-800 { color: #2f855a; }
+    .text-orange-700 { color: #c05621; }
+    .text-indigo-600 { color: #4c51bf; }
+
+    /* Animation Keyframes */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes zoomIn {
+      from {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    /* Animation Utility Classes */
+    .animate-fadeInUp {
+      animation: fadeInUp 1s ease forwards;
+    }
+    .animate-fadeInDown {
+      animation: fadeInDown 1s ease forwards;
+    }
+    .animate-zoomIn {
+      animation: zoomIn 1s ease forwards;
+    }
+
+    /* Marquee Styling & Hover */
+    marquee {
+      font-family: 'Arial', sans-serif;
+      font-size: 1.2rem;
+      color: #b22222;
+      background-color: #fffacd;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    marquee:hover {
+      color: #8b0000;
+      background-color: #fff8dc;
+    }
+    .bg-white {
+      background-color: #ffffff;
+    }
+    .text-gray-800 {
+      color: #2d3748; /* Dark Gray */
+    }
+    .text-red-600 {
+      color: #e53e3e; /* Red */
+    }
+    .text-green-800 {
+      color: #2f855a; /* Dark Green */
+    }
+    .text-orange-700 {
+      color: #c05621; /* Dark Orange */
+    }
+    .text-indigo-600 {
+      color: #4c51bf; /* Indigo */
+    }
+    .fade-in {
+      animation: fadeIn 2s ease-in forwards;
+      opacity: 0;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    .zoom-in {
+      animation: zoomIn 1.5s ease-in-out forwards;
+      transform: scale(0.8);
+    }
+    .fade-in-up {
+      animation: fadeInUp 1s ease-out forwards;
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    .zoom-in {
+      animation: zoomIn 1s ease-in-out forwards;
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    @keyframes zoomIn {
+      to {
+        transform: scale(1);
+      }
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+    @keyframes zoomIn {
+      from {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+    .fade-in-up {
+      animation: fadeInUp 1s ease-out forwards;
+    }
+
+    .zoom-in {
+      animation: zoomIn 1s ease-in-out forwards;
+    }
+    body {
+      background-image: url('images/background.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    marquee {
+      font-family: 'Arial', sans-serif;
+      font-size: 1.2rem;
+      color: #b22222; /* Dark Red */
+      background-color: #fffacd; /* Lemon Chiffon */
+      padding: 10px;
+      border-radius: 5px;
+    }
+    marquee:hover {
+      color: #8b0000; /* Darker Red on hover */
+      background-color: #fff8dc; /* Lighter Lemon Chiffon on hover */
+    }
+    .bg-yellow-100 {
+      background-color: #fefcbf; /* Light Yellow */
+    }
+    .text-green-800 {
+      color: #2f855a; /* Dark Green */
+    }
+    .text-orange-700 {
+      color: #c05621; /* Dark Orange */
+    }
+    .text-indigo-600 {
+      color: #4c51bf; /* Indigo */
+    }
+    .text-red-600 {
+      color: #e53e3e; /* Red */
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-800 font-sans">
+  <marquee class="text-lg font-semibold text-red-600 bg-yellow-100 py-1">Welcome to the historical events</marquee>
+
+  <nav class="fixed top-1/3 left-2 bg-white shadow-md p-2 rounded-lg z-50 hidden md:block">
+  <ul class="space-y-2 text-sm font-semibold">
+    <li><a href="#hero" class="text-green-700 hover:underline">Home</a></li>
+    <li><a href="#timeline" class="text-green-700 hover:underline">Timeline</a></li>
+    <li><a href="#freedom-fighters" class="text-green-700 hover:underline">Freedom Fighters</a></li>
+    <li><a href="#gallery" class="text-green-700 hover:underline">Gallery</a></li>
+    <li><a href="#conclusion" class="text-green-700 hover:underline">Legacy</a></li>
+  </ul>
+</nav>
+ 
+  <header class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold text-green-800">Freedom Scroll</h1>
+      <nav class="hidden md:flex space-x-6">
+        <a href="#hero" class="text-green-700 hover:underline">Home</a>
+        <a href="#timeline" class="text-green-700 hover:underline">Timeline</a>
+        <a href="#freedom-fighters" class="text-green-700 hover:underline">Freedom Fighters</a>
+        <a href="#gallery" class="text-green-700 hover:underline">Gallery</a>
+        <a href="#conclusion" class="text-green-700 hover:underline">Legacy</a>
+      </nav>
+    </div>
+  </header>
+  <div class="h-16"></div> <!-- Spacer for fixed header -->
+  <div class="h-16"></div> <!-- Spacer for fixed nav -->
+  <div class="h-16"></div> <!-- Spacer for fixed nav -->
+  <div class="h-16"></div> <!-- Spacer for fixed nav -->
+  <div class="h-16"></div> <!-- Spacer for fixed nav -->
+  <div class="h-16"></div> <!-- Spacer for fixed nav -->
+  <div class="h-16"></div> <!-- Spacer for fixed nav -->
+  <div class="h-16"></div> <!-- Spacer for fixed nav -->
+
+
+  <!-- Hero Section with India Flag Background -->
+  <section id="hero">...</section>
+
+  <section class="relative h-screen flex flex-col justify-center items-center text-center p-4 overflow-hidden">
+    <img src="indep.jpg" alt="India Flag" class="absolute inset-0 w-full h-full object-cover opacity-20 z-0" />
+    <div class="relative z-10 fade-in">
+      <h1 class="text-4xl md:text-6xl font-bold text-green-800">India's Independence</h1>
+      <p class="mt-4 text-lg md:text-2xl text-orange-700">A Scroll Through History - 1857 to 1947</p>
+    </div>
+  </section>
+
+  <!-- Timeline Section -->
+   <section id="timeline">...</section>
+  <section class="bg-white p-6 md:p-16">
+    <h2 class="text-3xl font-semibold text-center mb-10 fade-in">Timeline of Key Events</h2>
+    <div class="space-y-10 fade-in">
+      <div>
+        <h3 class="text-xl font-bold text-indigo-600">1857 – First War of Independence</h3>
+        <p>Also called the Sepoy Mutiny, this was a major, but ultimately unsuccessful, uprising against British rule.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold text-indigo-600">1885 – Formation of Indian National Congress</h3>
+        <p>The INC became the principal leader of the Indian independence movement.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold text-indigo-600">1919 – Jallianwala Bagh Massacre</h3>
+        <p>British troops killed hundreds of unarmed civilians, leading to widespread outrage and resistance.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold text-indigo-600">1942 – Quit India Movement</h3>
+        <p>Launched by Gandhi demanding an end to British Rule of India.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold text-indigo-600">1947 – Independence Achieved</h3>
+        <p>India officially gained independence on August 15, 1947.</p>
+     </div>
+      <div>
+        <h3 class="text-xl font-bold text-indigo-600">1947 – Partition of India</h3>
+        <p>India was divided into two independent dominions, India and Pakistan, leading to significant upheaval.</p>
+    </div>
+
+  </section>
+
+  <!-- Personalities Section -->
+<section id="freedom-fighters">...</section>
+
+  <section class="bg-gray-50 p-6 md:p-16">
+    <h2 class="text-3xl font-semibold text-center mb-10 fade-in">Notable Freedom Fighters</h2>
+    <div class="grid md:grid-cols-4 gap-8 text-center fade-in">
+      <div class="zoom-in">
+        <img src="gandhi.jpg" alt="Gandhi" class="w-full h-64 object-cover rounded-xl shadow-md">
+        <h3 class="mt-4 text-xl font-bold">Mahatma Gandhi</h3>
+        <p>Mahatma Gandhi, born as Mohandas Karamchand Gandhi on October 2, 1869, in Porbandar, Gujarat, was a key leader in India’s struggle for independence from British rule. He is widely regarded as the Father of the Nation for his role in uniting Indians through non-violent civil disobedience.
+
+Gandhi introduced the world to the powerful concepts of Satyagraha (truth-force) and Ahimsa (non-violence), leading several landmark movements such as the Non-Cooperation Movement (1920), the Dandi Salt March (1930), and the Quit India Movement (1942). His philosophy inspired global leaders like Martin Luther King Jr. and Nelson Mandela.
+
+Gandhi lived a life of simplicity, wore khadi, promoted rural development, and believed in self-reliance and harmony among all communities. His efforts not only challenged colonial rule but also aimed at eradicating social evils like untouchability.
+
+He was assassinated on January 30, 1948, but his ideals of peace, truth, and justice continue to guide and inspire movements for freedom and equality around the world..</p>
+      </div>
+      <div class="zoom-in">
+        <img src="nehru.jpg" alt="Nehru" class="w-full h-64 object-cover rounded-xl shadow-md">
+        <h3 class="mt-4 text-xl font-bold">Jawaharlal Nehru</h3>
+        <p>Jawaharlal Nehru, born on November 14, 1889, was a central figure in India’s struggle for independence and the country’s first Prime Minister after independence in 1947. A visionary leader and a close associate of Mahatma Gandhi, Nehru played a key role in shaping modern India’s political and social landscape.
+
+He advocated for a secular, democratic, and socialist India, promoting scientific progress and industrialization as pillars for national development. Nehru’s policies laid the foundation for education, infrastructure, and international diplomacy in independent India.
+
+As the architect of a new nation, Nehru’s legacy includes his emphasis on unity in diversity and his famous vision of a “Tryst with Destiny,” symbolizing India’s journey toward progress and freedom.
+
+.</p>
+      </div>
+      <div class="zoom-in">
+        <img src="bose.jpg" alt="Subhash Chandra Bose" class="w-full h-64 object-cover rounded-xl shadow-md">
+        <h3 class="mt-4 text-xl font-bold">Subhash Chandra Bose</h3>
+        <p>Subhash Chandra Bose, popularly known as Netaji, was born on January 23, 1897, in Cuttack, Odisha. He was a fearless and charismatic leader who played a crucial role in India’s freedom struggle, advocating for complete independence through more militant means compared to the non-violent approach of other leaders.
+
+Bose strongly believed in armed resistance against British rule. He led the Indian National Army (INA), formed with Indian prisoners of war and expatriates, aiming to liberate India with the help of Axis powers during World War II.
+
+Known for his slogan “Give me blood, and I will give you freedom,” Bose inspired countless Indians to take up the fight for their country’s sovereignty. Despite controversies and his mysterious disappearance in 1945, his legacy as a patriotic revolutionary remains deeply respected.
+
+His determination and leadership continue to motivate generations to stand up for justice and national pride..</p>
+      </div>
+      <div class="zoom-in">
+        <img src="bhagat.jpg" alt="Bhagat Singh" class="w-full h-64 object-cover rounded-xl shadow-md">
+        <h3 class="mt-4 text-xl font-bold">Bhagat Singh</h3>
+        <p>Bhagat Singh was a revolutionary freedom fighter born on September 28, 1907, who became a symbol of youthful patriotism and fearless resistance against British colonial rule. He was deeply influenced by socialist ideas and believed in the power of direct action to overthrow oppression.
+
+Bhagat Singh is best known for his role in the Lahore Conspiracy Case and for his bold act of throwing non-lethal bombs in the Central Legislative Assembly to protest against repressive laws. Despite his young age, his courage and writings inspired countless Indians to join the independence movement.
+
+He was executed by the British at the age of 23, becoming a martyr and enduring icon for India’s freedom struggle..</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+
+  <section id="gallery">...</section>
+  <section class="bg-white p-6 md:p-16">
+    <h2 class="text-3xl font-semibold text-center mb-10 fade-in">Historic Moments</h2>
+    <div class="grid md:grid-cols-3 gap-6 fade-in">
+      <img src="independence.jpg" alt="Independence" class="rounded-lg shadow-md zoom-in">
+      <img src="flag.jpg" alt="Flag Hoisting" class="rounded-lg shadow-md zoom-in">
+      <img src="partition.jpg" alt="Partition" class="rounded-lg shadow-md zoom-in">
+      <img src="gandhi.jpg" alt="Gandhi's Salt March" class="rounded-lg shadow-md zoom-in">
+      <img src="bhagat.jpg" alt="Bhagat Singh" class="rounded-lg shadow-md zoom-in">
+      <img src="nehru.jpg" alt="Nehru's Speech" class="rounded-lg shadow-md zoom-in">
+      <img src="bose.jpg" alt="Bose and INA" class="rounded-lg shadow-md zoom-in">
+    </div>
+  </section>
+
+  <!-- Conclusion -->
+   <section id="conclusion">...</section>
+  <section class="bg-yellow-100 p-6 md:p-16 text-center fade-in">
+    <h2 class="text-3xl font-bold mb-4">Legacy of Freedom</h2>
+    <p class="text-lg">India's independence was not just a political revolution; it was the birth of a new nation shaped by the dreams, struggles, and sacrifices of millions. Let us remember and honor their legacy.</p>
+  </section>
+
+
+</body>
+<div id="fact-box" class="bg-orange-100 p-4 text-center rounded-lg shadow-md mt-4 fade-in text-lg font-medium"></div>
+
+<script>
+  const facts = [
+    "The Indian National Congress was formed in 1885.",
+    "Gandhiji led the Salt March in 1930 covering 240 miles.",
+    "Bhagat Singh was only 23 when he was executed.",
+    "Subhash Chandra Bose formed the Azad Hind Fauj in 1943."
+  ];
+  let i = 0;
+  const factBox = document.getElementById("fact-box");
+  setInterval(() => {
+    factBox.innerText = facts[i];
+    i = (i + 1) % facts.length;
+  }, 4000);
+</script>
+</body>
+
+<!-- Quiz Section -->
+<section class="bg-gray-50 p-6 md:p-16">
+  <h2 class="text-3xl font-semibold text-center mb-10 animate-fadeInDown">Test Your Knowledge</h2>
+  <div id="quiz-container" class="max-w-3xl mx-auto space-y-8">
+    <!-- Question template will be inserted here dynamically -->
+  </div>
+  <button 
+    id="submit-btn" 
+    class="mt-6 px-6 py-3 bg-green-600 text-white rounded hover:bg-green-700 disabled:bg-gray-400"
+    disabled
+  >
+    Submit Answers
+  </button>
+  <div id="result" class="mt-6 text-center text-xl font-semibold"></div>
+</section>
+
+<script>
+  // Quiz Data
+  // Quiz data for the interactive quiz
+
+  const quizData = [
+    {
+      question: "When did India gain independence?",
+      options: ["1945", "1947", "1950", "1939"],
+      correct: 1,
+    },
+    {
+      question: "Who was the first Prime Minister of India?",
+      options: ["Mahatma Gandhi", "Jawaharlal Nehru", "Subhash Chandra Bose", "Bhagat Singh"],
+      correct: 1,
+    },
+    {
+      question: "What was the Jallianwala Bagh incident?",
+      options: [
+        "A peaceful protest",
+        "A massacre by British troops",
+        "An independence declaration",
+        "A treaty signed with Britain",
+      ],
+      correct: 1,
+    },
+    {
+      question: "Who led the Indian National Army (INA)?",
+      options: ["Bhagat Singh", "Subhash Chandra Bose", "Bal Gangadhar Tilak", "Lala Lajpat Rai"],
+      correct: 1,
+    },
+  ];
+
+  const quizContainer = document.getElementById("quiz-container");
+  const submitBtn = document.getElementById("submit-btn");
+  const resultDiv = document.getElementById("result");
+
+  // Track answers
+  const userAnswers = new Array(quizData.length).fill(null);
+
+  function createQuestion(index) {
+    const q = quizData[index];
+    const questionDiv = document.createElement("div");
+    questionDiv.className = "bg-white p-6 rounded shadow animate-fadeInUp";
+
+    const questionTitle = document.createElement("h3");
+    questionTitle.className = "text-xl font-semibold mb-4";
+    questionTitle.textContent = `Q${index + 1}. ${q.question}`;
+    questionDiv.appendChild(questionTitle);
+
+    q.options.forEach((option, i) => {
+      const optionLabel = document.createElement("label");
+      optionLabel.className = "block mb-2 cursor-pointer select-none";
+
+      const optionInput = document.createElement("input");
+      optionInput.type = "radio";
+      optionInput.name = `question${index}`;
+      optionInput.value = i;
+      optionInput.className = "mr-3 accent-green-600";
+
+      optionInput.addEventListener("change", () => {
+        userAnswers[index] = i;
+        checkAllAnswered();
+        // Show immediate feedback
+        if (i === q.correct) {
+          feedbackSpan.textContent = "Correct!";
+          feedbackSpan.className = "text-green-600 font-bold";
+        } else {
+          feedbackSpan.textContent = `Wrong! Correct: ${q.options[q.correct]}`;
+          feedbackSpan.className = "text-red-600 font-bold";
+        }
+      });
+
+      const optionText = document.createTextNode(option);
+
+      optionLabel.appendChild(optionInput);
+      optionLabel.appendChild(optionText);
+
+      questionDiv.appendChild(optionLabel);
+    });
+
+    const feedbackSpan = document.createElement("div");
+    feedbackSpan.className = "mt-2 min-h-[1.5rem] text-lg";
+    questionDiv.appendChild(feedbackSpan);
+
+    return questionDiv;
+  }
+
+  // Insert questions into container
+  quizData.forEach((_, i) => {
+    quizContainer.appendChild(createQuestion(i));
+  });
+
+  function checkAllAnswered() {
+    submitBtn.disabled = userAnswers.includes(null);
+  }
+
+  submitBtn.addEventListener("click", () => {
+    let score = 0;
+    userAnswers.forEach((answer, idx) => {
+      if (answer === quizData[idx].correct) score++;
+    });
+    resultDiv.textContent = `You scored ${score} out of ${quizData.length}`;
+    submitBtn.disabled = true;
+  });
+  function createQuestion(index) {
+  const q = quizData[index];
+  const questionDiv = document.createElement("div");
+  questionDiv.className = "bg-white p-6 rounded shadow animate-fadeInUp";
+
+  const questionTitle = document.createElement("h3");
+  questionTitle.className = "text-xl font-semibold mb-4";
+  questionTitle.textContent = `Q${index + 1}. ${q.question}`;
+  questionDiv.appendChild(questionTitle);
+
+  // Create feedbackSpan before adding options
+  const feedbackSpan = document.createElement("div");
+  feedbackSpan.className = "mt-2 min-h-[1.5rem] text-lg";
+
+  q.options.forEach((option, i) => {
+    const optionLabel = document.createElement("label");
+    optionLabel.className = "block mb-2 cursor-pointer select-none";
+
+    const optionInput = document.createElement("input");
+    optionInput.type = "radio";
+    optionInput.name = `question${index}`;
+    optionInput.value = i;
+    optionInput.className = "mr-3 accent-green-600";
+
+    optionInput.addEventListener("change", () => {
+      userAnswers[index] = i;
+      checkAllAnswered();
+      // Show immediate feedback
+      if (i === q.correct) {
+        feedbackSpan.textContent = "Correct!";
+        feedbackSpan.className = "text-green-600 font-bold mt-2 min-h-[1.5rem] text-lg";
+      } else {
+        feedbackSpan.textContent = `Wrong! Correct: ${q.options[q.correct]}`;
+        feedbackSpan.className = "text-red-600 font-bold mt-2 min-h-[1.5rem] text-lg";
+      }
+    });
+
+    const optionText = document.createTextNode(option);
+
+    optionLabel.appendChild(optionInput);
+    optionLabel.appendChild(optionText);
+
+    questionDiv.appendChild(optionLabel);
+  });
+
+  questionDiv.appendChild(feedbackSpan);
+
+  return questionDiv;
+}
+
+</script>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center py-4">
+    © 2025 Freedom Scroll | Designed with ❤️
+  </footer>
+</body>
+</html>  
